@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Ödevi</title>
+</head>
+<body>
+    <h1>Müşteri Kayıt Formu</h1>
+    
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Kişisel Bilgileriniz</legend>
+
+            <label for="adsoyad">Ad Soyad</label><br>
+            <input type="text" name="adsoyad" id="adsoyad"> 
+            <br><br>
+
+            <label for="dogum-tarihiniz">Doğum Tarihiniz</label><br>
+            <input type="date" name="dogum-tarihiniz" id="dogum-tarihiniz" value="2000-01-01" min="2000-01-01" max="2024-01-01">
+            <br><br>
+
+            <label for="maas">Maaş Beklentiniz</label><br>
+            <input type="number" name="maas" id="maas" min="10000" max="6000000" step="100">
+            <br><br>
+
+            <label for="ders">En Sevdiğiniz Ders</label><br>
+            <input type="text" name="ders" id="ders" list="dersiniz">
+            <br><br>
+            <datalist id="dersiniz">
+                <option value="Web Tabanlı Uygulama Geliştirme">
+                <option value="Yapay Zeka Ve Makine Öğrenimi">
+                <option value="Mobil Uygulama Geliştirme">
+                <option value="Grafik Ve Canlandırma"> 
+            </datalist> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Üyelik Bilgileri</legend>
+
+            <label for="kullaniciadi">Kullanıcı Adı</label><br>
+            <input type="text" name="kullaniciadi" id="kullaniciadi">
+            <br><br>
+
+            <label for="epostaniz">E-posta</label><br>
+            <input type="email" name="epostaniz" id="epostaniz" placeholder="ornek@yazilim11.com" autocomplete="on">
+            <br><br>
+            
+            <label for="sifre">Şifre</label><br>
+            <input type="password" name="sifre" id="sifre" placeholder="En az 8 Karakter Olmalıdır" minlength="8" maxlength="16" required>
+            <br><br>
+
+            <label>Üyelik Sözleşmesi</label><br>
+            <textarea rows="8" cols="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae ea eveniet ipsum nulla magnam error tenetur temporibus suscipit? Ipsum provident soluta adipisci fugit atque earum deserunt nostrum facilis voluptates.</textarea>
+
+        </fieldset><br><br>
+
+        <button type="submit">kaydet</button>
+        <button type="submit">Temizle</button>
+     </form>
+    
+</body>
+</html>
