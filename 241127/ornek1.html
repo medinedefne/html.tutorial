@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneği </title>
+</head>
+<body>
+    <h1>fieldset ve select kullanımı</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+
+            <label for="isim">İsim</label><br>
+            <input type="text" name="isim" id="isim" placeholder="ad">
+            <br><br>
+
+            <label for="soyad">Soyad</label><br>
+            <input type="text" name="soyad" id="soyad" placeholder="soyad">
+            <br><br>
+
+            <input type="radio" name="cinsiyet" id="kiz">
+            <label for="kiz">kız</label>
+
+            <input type="radio" name="cinsiyet" id="erkek">
+            <label for="erkek">erkek</label>
+            <br><br>
+
+            <label for="dgtarih">Doğum Tarihi</label><br>
+            <input type="date" name="dgtarih" id="dgtarih" value="2020-01-01">
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Eğitim Bilgileri</legend>
+    
+            <label for="okul">Okul</label><br>
+            <input type="text" name="okul" id="okul">
+            <br><br>
+    
+            <label for="sinif">Sınıf</label><br>
+            <input type="text" name="sinif" id="sinif">
+            <br><br>
+
+            <label for="bolumunuz">Bölümünüz</label><br>
+            <select name="bolumunuz" id="bolumunuz">
+                <option value="1">bilişim teknolojileri</option>
+                <option value="2">çocuk gelişim</option>
+                <option value="3">moda tasarım</option>
+                <option value="4">grafif tasarım</option>
+            </select>
+            <br><br>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Ek Bilgiler</legend>
+            <textarea name="not" id="not" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis tenetur exercitationem nobis rerum laboriosam, illo eius sunt nisi unde voluptatem veritatis, neque illum! Ducimus veritatis dolor iure quis illo.</textarea>
+            <br><br>
+
+            <input type="checkbox" name="bilgi" id="bilgi">
+            <label for="bilgi">Yukarıdaki bilgileri kabul et</label>
+            <br><br>
+
+            <input type="checkbox" name="cerez" id="cerez">
+            <label for="cerez">Yukarıdaki bilgileri kabul et</label>
+            <br><br>
+
+            <button type="submit">KAYDET</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
