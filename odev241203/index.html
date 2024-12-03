@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio ve Checkbox</title>
+</head>
+<body>
+    <h1>Kampanyalar</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Hangi kozmatik Ürünlerde %50 indirim istersiniz??</legend>
+
+            <input type="radio" name="indirim" id="ind" value="Makyaj ürünleri">
+            <label for="ind">Makyaj Ürünleri</label><br><br>
+
+            <input type="radio" name="indirim" id="ind2" value="Bakım ürünleri">
+            <label for="ind2">Bakım Ürünleri</label><br><br>
+
+            <input type="radio" name="indirim" id="ind3" value="Saç ürünleri">
+            <label for="ind3">Saç Ürünleri</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hangi Ürünleri İstersiniz</legend>
+
+            <input type="checkbox" name="urun[]" id="urun1" value="ruj">
+            <label for="urun1">Ruj</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun2" value="Allık">
+            <label for="urun2">Allık</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun3" value="Maskara">
+            <label for="urun3">Maskara</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun4" value="yüz maskesi">
+            <label for="urun4">Yüz Maskesi</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun5" value="kil makesi">
+            <label for="urun5">Kil Maskesi</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun6" value="siyah nokta maskesi">
+            <label for="urun6">Siyah Nokta Maskesi</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun7" value="saç maskesi">
+            <label for="urun7">Saç Maskesi</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun8" value="saç kremi">
+            <label for="urun8">Saç Kremi</label><br><br>
+
+            <input type="checkbox" name="urun[]" id="urun9" value="saç yağı">
+            <label for="urun9">Saç Yağı</label><br><br>
+        </fieldset>
+
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+    </form>
+</body>
+</html>
