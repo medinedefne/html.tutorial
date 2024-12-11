@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Uygulama Örneği</title>
+    <style>
+        /*resetleme kodları*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #galeri{
+            padding: 20px;
+            display: flex;/*içindeki nesneler flex oldu*/
+            flex-wrap: wrap;/*sarmalama taşan kısımlar aşağı iner*/
+            gap: 15px;/*nesneler arasındaki boşluk*/
+            background-color: #333;
+            width: 900px;
+            margin: 0 auto;/*yukarıdaki aşağıdaki 0 sağdan soldan auto*/
+        }
+        /*:hover üzerine geldiğinde çalışır*/
+        #galeri img{
+            width: calc(830px / 3);/*genişlik verir*/ /*calc()-->kendisi hesaplar*/
+            opacity: 0.5;/*0-1 arasında verilir*/
+        }
+        /*:hover üzerine geldiğinde çalışır*/
+        #galeri img:hover{
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex Uygulama</h1>
+    <div id="galeri">
+        <img src="https://picsum.photos/id/237/300/200" alt="...">
+        <img src="https://picsum.photos/id/237/300/200" alt="...">
+        <img src="https://picsum.photos/id/237/300/200" alt="...">
+        <img src="https://picsum.photos/id/237/300/200" alt="...">
+        <img src="https://picsum.photos/id/237/300/200" alt="...">
+        <img src="https://picsum.photos/id/237/300/200" alt="...">
+        <img src="https://picsum.photos/id/237/300/200" alt="...">
+
+    </div>
+</body>
+</html>
